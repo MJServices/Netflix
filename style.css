@@ -1,0 +1,557 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+.page1{
+    height: 110vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.net-img>img{
+    height: 110vh;
+    width: 110%;
+    object-fit: cover;
+    background-position: center;
+    z-index: -5;
+    position: absolute;
+}
+.wrapper{
+    height: 110vh;
+    width: 100%;
+    background-color: #000000b4;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+nav{
+    height: 90px;
+    width: 100vw;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+}
+nav .logo{
+    background-image: url(https://images.ctfassets.net/y2ske730sjqp/6bhPChRFLRxc17sR8jgKbe/6fa1c6e6f37acdc97ff635cf16ba6fb3/Logos-Readability-Netflix-logo.png);
+    height: 90px;
+    width: 240px;
+    background-size: cover;
+    background-position: center;
+}
+nav .nav-part2 button{
+    background-color: red;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 76px;
+    height: 32px;
+    border-radius: 0.19rem;
+}
+.page1 content{
+    z-index: 10;
+    position: relative;
+    height: calc(110vh - 90px);
+    display: block;
+    width: 100vw;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+.page1 content>.heading{
+    font-size: 3.7vw;
+    font-weight: 600;
+}
+.mini-heading{
+    font-size: 1.8vw;
+}
+.page2 content .para{
+    font-size: 1.5vw;
+}
+.search-cont{
+    display: flex;
+    gap: 5px;
+}
+.search-cont input{
+    height: 65px;
+    width: 350px;
+    padding: 0 15px;
+    background-color: rgba(0, 0, 0, 0.499);
+    border: none;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.search-cont input::placeholder {
+    color: #fff;
+    font-size: 0.95rem;
+}
+.search-cont button{
+    height: 65px;
+    width: 204px;
+    font-size: 1.5rem;
+    border-radius: 0.19rem;
+    border: none;
+    color: #fff;
+    background-color: red;
+}
+.page2{
+    height: 90vh;
+    width: 100vw;
+    background-color: #000;
+    border-top: 8px solid rgb(54, 54, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page2 content{
+    height: 30vw;
+    width: 75vw;
+    display: flex;
+}
+.page2 content .left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.page2 content .left .heading{
+    font-size: 3.5vw;
+    font-weight: 700;
+}
+.page2 content .left .para{
+    font-size: 1.8vw;
+}
+.page2 content .right{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+}
+.page2 content .right>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+}
+.page2 content .right>video{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 1;
+}
+.page3{
+    height: 90vh;
+    width: 100vw;
+    background-color: #000;
+    border-top: 8px solid rgb(54, 54, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page3 content{
+    height: 30vw;
+    width: 75vw;
+    display: flex;
+}
+.page3 .left{
+    height: 100%;
+    width: 50%;
+    background-image: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+}
+.page3 .right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.page3 .right .heading{
+    font-size: 4vw;
+    font-weight: 600;
+}
+.page3 .right .para{
+    font-size: 1.8vw;
+}
+.page3 .left .box{
+    height: 7vw;
+    width: 21vw;
+    margin-left: 2.4vw;
+    margin-bottom: 30px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    background-color: #000;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.page3 .left .box img{
+    height: 100%;
+    width: 22%;
+    box-sizing: border-box;
+}
+.page3 .left .box .para-cont .para2{
+    color: royalblue;
+    text-align: left;
+    font-size: 0.85rem;
+}
+.page3 .left .box .download{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif);
+    height: 60px;
+    width: 60px;
+    background-size: cover;
+}
+.page4{
+    height: 60vh;
+    width: 100vw;
+    background-color: #000;
+    border-top: 8px solid rgb(54, 54, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page4 content{
+    width: 60vw;
+    height: 40vh;
+}
+.page4 content .heading{
+    font-size: 4vw;
+    font-weight: 600;
+    width: 300px;
+}
+.page4 content .para{
+    margin-top: 20px;
+    line-height: 30px;
+    width: 400px;
+    font-size: 1.7vw;
+}
+.page5{
+    height: 90vh;
+    width: 100vw;
+    background-color: #000;
+    border-top: 8px solid rgb(54, 54, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page5 content{
+    height: 30vw;
+    width: 75vw;
+    display: flex;
+}
+.page5 content .left{
+    height: 100%;
+    width: 50%;
+    background-image: url(https://occ-0-3587-58.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABejKYujIIDQciqmGJJ8BtXkYKKTi5jiqexltvN1YmvXYIfX8B9CYwooUSIzOKneblRFthZAFsYLMgKMyNfeHwk16DmEkpIIcb6A3.png?r=f55);
+    background-size: cover;
+    background-position: center;
+}
+.page5 content .right{
+    height: 50%;
+    width: 50%;
+    margin-top: 70px;
+}
+.page5 content .heading{
+    font-size: 4vw;
+    font-weight: 600;
+}
+.page5 content .para{
+    font-size: 1.8vw;
+    margin-top: 20px;
+}
+.page6{
+    height: 130vh;
+    width: 100vw;
+    background-color: #000;
+    border-top: 8px solid rgb(54, 54, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.page6 content h1{
+    font-size: 3.5vw;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.panel{
+    width: 80vw;
+    height: 15vh;
+    background-color: rgb(58, 58, 58);
+    margin-top: 10px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    font-size: 2vw;
+    justify-content: space-between;
+}
+.panel div{
+    font-size: 3vw;
+}
+
+@media (max-width: 905px){
+    .page1 content .heading{
+        font-size: 5vw;
+    }
+    .page1 content .mini-heading{
+        font-size: 3vw;
+    }
+    .page2 content .para{
+        font-size: 3vw;
+    }
+    .search-cont input{
+        height: 8vh;
+        width: 35vw;
+    }
+    .search-cont button{
+        height: 8vh;
+        width: 25vw;
+    }
+    
+.page2{
+    height: 90vh;
+    width: 100vw;
+}
+.page2 content{
+    height: 100%;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.page2 content .left{
+    z-index: 99;
+}
+.page2 content .left .heading{
+    font-size: 5.5vw;
+}
+.page2 content .left .para{
+    font-size: 3.5vw;
+}
+.page2 content .right{
+    margin-top: -20vh;
+}
+
+.page3 content{
+    height: 100%;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.page3 .left{
+    height: 100%;
+    width: 80%;
+}
+
+.page3 .right{
+    height: 100%;
+    width: 60%;
+}
+.page3 .right .heading{
+    font-size: 4.5vw;
+}
+.page3 .right .para{
+    font-size: 3.5vw;
+}
+.page3 .left .box{
+    height: 14vw;
+    width: 40vw;
+    margin-left: 0vw;
+    margin-bottom: 0px;
+}
+.page3 .left .box img{
+    height: 100%;
+    width: 22%;
+}
+.para-cont{
+    width: 45%;
+}
+.page3 .left .box .para-cont .para1{
+    font-size: 1.6vw;
+}
+.page3 .left .box .para-cont .para2{
+    font-size: 1.5vw;
+}
+.page3 .left .box .download{
+    height: 100%;
+    width: 30%;
+    background-size: cover;
+}
+.page4{
+    height: 60vh;
+    width: 100vw;
+}
+.page4 content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.page4 content .heading{
+    font-size: 4.5vw;
+}
+.page4 content .para{
+    font-size: 3.5vw;
+}
+
+.page5 content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.page5 content .left{
+    margin-top: 10vh;
+    height: 100%;
+    width: 70%;
+}
+.page5 content .right{
+    height: 50%;
+    width: 60%;
+    margin-top: 70px;
+}
+.page5 content .heading{
+    font-size: 4vw;
+    font-weight: 600;
+}
+.page5 content .para{
+    font-size: 3.5vw;
+    margin-top: 20px;
+}
+.page6{
+    height: 100vh;
+}
+.page6 content h1{
+    font-size: 3.5vw;
+}
+.panel{
+    height: 10vh;
+    font-size: 3vw;
+}
+.panel div{
+    font-size: 4vw;
+}
+}
+
+@media (max-width: 700px) {
+    .page3 content .left .box{
+        width: 200px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav{
+        padding: 0 0;
+    }
+    .nav-part2{
+        padding: 0 10px;
+    }
+    .page1 content{
+        gap: 15px;
+    }
+    .page1 content .heading{
+        font-size: 7vw;
+        text-align: center;
+    }
+    .page1 content .mini-heading{
+        font-size: 5.5vw;
+    }
+    .page1 content .para{
+        font-size: 5vw;
+        text-align: center;
+    }
+    .page1 .search-cont{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .search-cont input{
+        width: 100%;
+    }
+    .search-cont button{
+        font-size: 3.5vw;
+    }
+    .page2{
+        height: 30vh;
+    }
+    .page2 .right{
+        display: none;
+    }
+    .page3{
+        height: 80vh;
+    }
+    .page3 content .left{
+        width: 105%;
+    }
+    .page3 content .right .heading{
+        font-size: 6vw;
+    }
+    .page3 content .right .para {
+        font-size: 4vw;
+    }
+    .page4{
+        height: 30vh;
+    }
+    .page4 content .heading{
+        font-size: 6vw;
+    }
+    .page4 content .para{
+        font-size: 4vw;
+        width: 80%;
+    }
+    .page5{
+        height: 70vh;
+    }
+    .page5 .right .heading{
+        font-size: 6vw;
+    }
+    .page5 .right .para{
+        font-size: 4vw;
+        margin-bottom: 5vh;
+    }
+}
